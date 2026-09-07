@@ -4,6 +4,231 @@ info:
 packages:
 - name: TestMigrationProjectProject
   gitBranch: master
+services:
+- serviceName: project.testmigrationproject.integrations:TechnologyConnector
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: pub.client.ftp:ls
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1126
+- serviceName: pub.client.sftp:ls
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1126
+- serviceName: pub.client:smtp
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1126
+- serviceName: pub.client:http
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1126
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_CornerPoints
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: pub.client:soapClient
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.1126
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_GmlLatLonList
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_GmlTimeSeries
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListCityNames
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListLine
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListSquare
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListSubgrid
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListZipCode
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgen
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenByDay
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenByDayLatLonList
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenLatLonList
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Input
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Output
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:genericFault_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_CornerPoints_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_GmlLatLonList_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_GmlTimeSeries_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_LatLonListCityNames_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_LatLonListLine_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_LatLonListSquare_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_LatLonListSubgrid_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_LatLonListZipCode_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_NDFDgenByDayLatLonList_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_NDFDgenByDay_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_NDFDgenLatLonList_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors.testSoap_.responseServices:ndfdXMLPortType_NDFDgen_Response
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
+- serviceName: project.testmigrationproject.soap.connectors:testSoap
+  packages:
+  - name: TestMigrationProjectProject
+    version: "1.0"
 configurationVariables:
   jdbc.SAP TxStore Pool.maxConns: "10"
   jdbcfunc.SAPTxStore.failFastMode: false
