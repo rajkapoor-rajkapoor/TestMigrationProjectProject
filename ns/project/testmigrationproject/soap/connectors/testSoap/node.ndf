@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">project.testmigrationproject.soap.connectors:testSoap</value>
+  <value name="node_pkg">TestMigrationProjectProject</value>
+  <record name="node_hints" javaclass="com.wm.util.Values">
+    <value name="createdBy">RajKapoor.RajKapoor@ibm.com</value>
+    <value name="createdDate">2026-09-07T12:46:47.757818480Z</value>
+    <value name="modifiedBy">RajKapoor.RajKapoor@ibm.com</value>
+    <value name="lastModifiedDate">2026-09-07T12:46:50.436830911Z</value>
+  </record>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5555/</value>
+      <value name="locationURI">project.testmigrationproject.soap.connectors.testSoap?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">memory://testSoap.wsdl</value>
+  <value name="WSDLURL">http://default-designtime-is-6fd6c64ff4-2lkms:5555/ws/project.ic_rajkapoorestapi_d9f29378f48c407fa63728faab20c697_export.soap.connectors:testSoap?WSDL</value>
+  <value name="definitionName">testSoap</value>
+  <value name="version">V_12_1</value>
+  <value name="schemaDomain">acd49882084846b9906ef896c02627e1</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">ndfdXMLBinding</value>
+      <value name="portAddress">https://awsusprod.container.webmethodscloud.com:443/integration/service/Cldp1015a/IS1/ws/WSDL:GoogleWeather/ndfdXMLPort</value>
+      <value name="bindingName">ndfdXMLBinding</value>
+      <value name="bindingStyle">rpc</value>
+      <value name="bindingUse">encoded</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">ndfdXMLPort</value>
+      <value name="portTypeName">ndfdXMLPortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">https</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlTimeSeries">GmlTimeSeries</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSquare">LatLonListSquare</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListZipCode">LatLonListZipCode</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgen">NDFDgen</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDay">NDFDgenByDay</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListCityNames">LatLonListCityNames</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#CornerPoints">CornerPoints</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenLatLonList">NDFDgenLatLonList</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListLine">LatLonListLine</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlLatLonList">GmlLatLonList</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSubgrid">LatLonListSubgrid</value>
+        <value name="https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDayLatLonList">NDFDgenByDayLatLonList</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgen</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgen</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgen_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgen_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgen_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenLatLonList</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListSubgrid</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListSubgrid</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSubgrid_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListLine</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListLine</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListLine_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListLine_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListLine_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListZipCode</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListZipCode</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListZipCode_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListCityNames</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListCityNames</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListCityNames_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">LatLonListSquare</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_LatLonListSquare</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_LatLonListSquare_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">CornerPoints</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_CornerPoints</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_CornerPoints_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_CornerPoints_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_CornerPoints_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">GmlLatLonList</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_GmlLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">GmlTimeSeries</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_GmlTimeSeries</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_GmlTimeSeries_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenByDay</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenByDay</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDay_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">NDFDgenByDayLatLonList</value>
+      <value name="serviceName">project.testmigrationproject.soap.connectors.testSoap_.connectors:ndfdXMLPortType_NDFDgenByDayLatLonList</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <value name="docType">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <value name="nsOwner">project.testmigrationproject.soap.connectors.testSoap_.docTypes:ndfdXMLPortType_NDFDgenByDayLatLonList_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="tns">https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="SOAP-ENC">http://schemas.xmlsoap.org/soap/encoding/</value>
+    <value name="SOAP-ENV">http://schemas.xmlsoap.org/soap/envelope/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="xsi">http://www.w3.org/2001/XMLSchema-instance</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">false</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <array name="policyIds" type="value" depth="1">
+  </array>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <null name="originURI"/>
+  <null name="modifiable"/>
+  <value name="externalServiceName">{https://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl}WSDL.GoogleWeather</value>
+  <array name="policyAttachmentList" type="record" depth="1">
+  </array>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>
